@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">lab1-kotlin</string>
+    <string name="stringEnter">Enter your Name and Surname</string>
+    <string name="stringName">Name</string>
+    <string name="stringSurname">Surname</string>
+    <string name="stringApply">Apply</string>
+</resources>
