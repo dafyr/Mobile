@@ -1,7 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">lab1-kotlin</string>
+    <string name="app_name">Lab-Kotlin</string>
     <string name="stringEnter">Enter your Name and Surname</string>
     <string name="stringName">Name</string>
     <string name="stringSurname">Surname</string>
     <string name="stringApply">Apply</string>
+    <string name="stringHello">Hello</string>
+    <string name="stringNameError">Error: field "Name" is not filled</string>
+    <string name="stringSurnameError">Error: field "Surname" is not filled</string>
 </resources>

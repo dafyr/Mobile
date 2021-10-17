@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Лаб-Котлин</string>
+    <string name="stringEnter">Введите ваше Имя и Фамилию</string>
+    <string name="stringName">Имя</string>
+    <string name="stringSurname">Фамилия</string>
+    <string name="stringApply">Ввод</string>
+    <string name="stringHello">Здравствуйте</string>
+    <string name="stringNameError">Ошибка: поле "Имя" не заполнено</string>
+    <string name="stringSurnameError">Ошибка: поле "Фамилия" не заполнено</string>
+</resources>

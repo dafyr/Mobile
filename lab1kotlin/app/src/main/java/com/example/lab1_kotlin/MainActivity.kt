@@ -15,6 +15,9 @@ class MainActivity : AppCompatActivity() {
     private var enterName : TextView? = null
     private var enterSurname : TextView? = null
     private var result_text : TextView? = null
+    private var stringHello : String = ""
+    private var stringNameError : String = ""
+    private var stringSurnameError : String = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,15 +27,19 @@ class MainActivity : AppCompatActivity() {
         enterName = findViewById(R.id.enterName)
         enterSurname = findViewById(R.id.enterSurname)
         result_text = findViewById(R.id.result_text)
+        stringHello = getString(R.string.stringHello)
+        stringNameError = getString(R.string.stringNameError)
+        stringSurnameError = getString(R.string.stringSurnameError)
+
 
         buttonApply?.setOnClickListener{
             when {
-                enterName?.text?.toString()?.trim()?.equals("")!! -> Toast.makeText(this, "Ошибка: поле \"Name\" не заполнено", Toast.LENGTH_LONG).show()
-                enterSurname?.text?.toString()?.trim()?.equals("")!! -> Toast.makeText(this, "Ошибка: поле \"Surname\" не заполнено", Toast.LENGTH_LONG).show()
+                enterName?.text?.toString()?.trim()?.equals("")!! -> Toast.makeText(this, stringNameError, Toast.LENGTH_LONG).show()
+                enterSurname?.text?.toString()?.trim()?.equals("")!! -> Toast.makeText(this, stringSurnameError, Toast.LENGTH_LONG).show()
                 else -> {
                     val name = enterName?.text.toString()
                     val surname = enterSurname?.text.toString()
-                    result_text?.text = "Hello $name $surname"
+                    result_text?.text = "$stringHello $name $surname"
 
                 }
             }
