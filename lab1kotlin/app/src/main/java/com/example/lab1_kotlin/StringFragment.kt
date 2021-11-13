@@ -7,11 +7,10 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
-import android.widget.Toast
 import androidx.core.widget.doOnTextChanged
 
 
-class StringFragment : Fragment(R.layout.fragment_string) {
+class StringFragment : Fragment() {
 
     private var buttonApply : Button? = null
     private var enterName : TextView? = null
@@ -21,10 +20,6 @@ class StringFragment : Fragment(R.layout.fragment_string) {
     private var stringNameError : String = ""
     private var stringSurnameError : String = ""
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-
-        super.onCreate(savedInstanceState)
-    }
 
     override fun onCreateView(
         inflater: LayoutInflater,

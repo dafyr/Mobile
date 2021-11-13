@@ -17,4 +17,7 @@
     <string name="x_minus_2">X - 2</string>
     <string name="x_times_2">X * 2</string>
     <string name="result_placeholder">Результат равен</string>
+    <string name="set_the_result">Установить результат?</string>
+    <string name="yes">Да</string>
+    <string name="no">Нет</string>
 </resources>

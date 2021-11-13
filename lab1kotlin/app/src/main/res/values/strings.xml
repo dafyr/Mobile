@@ -17,4 +17,7 @@
     <string name="x_minus_2">X - 2</string>
     <string name="x_times_2">X * 2</string>
     <string name="result_placeholder">Result is</string>
+    <string name="set_the_result">Set the result?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
 </resources>
