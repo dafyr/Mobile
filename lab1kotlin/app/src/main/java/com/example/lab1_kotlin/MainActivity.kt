@@ -11,62 +11,35 @@ import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.core.widget.addTextChangedListener
 import androidx.core.widget.doOnTextChanged
+import androidx.fragment.app.Fragment
+import com.example.lab1_kotlin.databinding.ActivityMainBinding
 
 
 class MainActivity : AppCompatActivity() {
 
-    private var buttonApply : Button? = null
-    private var enterName : TextView? = null
-    private var enterSurname : TextView? = null
-    private var result_text : TextView? = null
-    private var stringHello : String = ""
-    private var stringNameError : String = ""
-    private var stringSurnameError : String = ""
+    lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        buttonApply = findViewById(R.id.buttonApply)
-        enterName = findViewById(R.id.enterName)
-        enterSurname = findViewById(R.id.enterSurname)
-        result_text = findViewById(R.id.result_text)
-        stringHello = getString(R.string.stringHello)
-        stringNameError = getString(R.string.stringNameError)
-        stringSurnameError = getString(R.string.stringSurnameError)
+        binding.buttonChangeFragment?.setOnClickListener {
 
-        buttonApply?.isEnabled = false;
-
-
-        enterName?.doOnTextChanged { text, _, _, _ ->
-            buttonApply?.isEnabled = text.toString().trim().isNotEmpty()
-        }
-
-        enterSurname?.doOnTextChanged { text, _, _, _ ->
-           buttonApply?.isEnabled = text.toString().trim().isNotEmpty()
-        }
-
-        buttonApply?.setOnClickListener {
-            when {
-                enterName?.text?.toString()?.trim()?.equals("")!! -> Toast.makeText(
-                    this,
-                    stringNameError,
-                    Toast.LENGTH_LONG
-                ).show()
-                enterSurname?.text?.toString()?.trim()?.equals("")!! -> Toast.makeText(
-                    this,
-                    stringSurnameError,
-                    Toast.LENGTH_LONG
-                ).show()
-                else -> {
-                    val name = enterName?.text.toString()
-                    val surname = enterSurname?.text.toString()
-                    result_text?.text = "$stringHello $name $surname"
-
-                }
-            }
+            replaceFragment(StringFragment())
 
         }
+
+        binding.buttonChangeFragment2?.setOnClickListener {
+
+            replaceFragment(NumberFragment())
+
+        }
+    }
+
+    private fun replaceFragment(fragment: Fragment) {
+
+        supportFragmentManager.beginTransaction().replace(R.id.fragmentContainerView, fragment).commit()
 
     }
 }

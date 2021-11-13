@@ -8,4 +8,13 @@
     <string name="stringHello">Hello</string>
     <string name="stringNameError">Error: field "Name" is not filled</string>
     <string name="stringSurnameError">Error: field "Surname" is not filled</string>
+    <string name="stringChangeFragment1">String Fragment</string>
+    <string name="stringChangeFragment2">Number Fragment</string>
+    <string name="stringFragmentNumber">This is a fragment for number</string>
+    <string name="stringFragmentString">This is a fragment for string</string>
+    <string name="enter_x">Enter x</string>
+    <string name="x_plus_2">X + 2</string>
+    <string name="x_minus_2">X - 2</string>
+    <string name="x_times_2">X * 2</string>
+    <string name="result_placeholder">Result is</string>
 </resources>

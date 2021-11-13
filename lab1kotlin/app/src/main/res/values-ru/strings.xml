@@ -8,4 +8,13 @@
     <string name="stringHello">Здравствуйте</string>
     <string name="stringNameError">Ошибка: поле "Имя" не заполнено</string>
     <string name="stringSurnameError">Ошибка: поле "Фамилия" не заполнено</string>
+    <string name="stringChangeFragment1">Строковый Фрагмент</string>
+    <string name="stringChangeFragment2">Числовой Фрагмент</string>
+    <string name="stringFragmentNumber">Это фрагмент для цифровой задачи</string>
+    <string name="stringFragmentString">Это фрагмент для стринговой задачи</string>
+    <string name="enter_x">Введите x</string>
+    <string name="x_plus_2">X + 2</string>
+    <string name="x_minus_2">X - 2</string>
+    <string name="x_times_2">X * 2</string>
+    <string name="result_placeholder">Результат равен</string>
 </resources>
