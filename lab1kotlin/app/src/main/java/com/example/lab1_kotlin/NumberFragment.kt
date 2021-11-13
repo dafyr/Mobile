@@ -15,9 +15,9 @@ import com.google.android.material.snackbar.Snackbar
 
 
 class NumberFragment : Fragment(R.layout.fragment_number), View.OnClickListener {
-    var resultTextLabel: TextView? = null
-    var xEdit: EditText? = null
-    
+    private var resultTextLabel: TextView? = null
+    private var xEdit: EditText? = null
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
