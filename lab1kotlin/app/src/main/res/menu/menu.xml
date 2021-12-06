@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/results"
+        android:title="@string/results"
+         />
+
+    <item android:id="@+id/open_browser"
+        android:title="@string/open_browser_text"
+        />
+
+    <item android:id="@+id/open_service"
+        android:title="@string/open_service_management_text"
+         />
+
+    <item android:id="@+id/open_settings"
+        android:title="@string/open_settings"
+         />
+
+    <item android:id="@+id/open_animation"
+        android:title="@string/open_animation"
+         />
+</menu>
