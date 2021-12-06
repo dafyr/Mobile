@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name" translatable="false">Complete</string>
+    <string name="enter_data">Enter data</string>
+    <string name="input_first_number_hint">Enter the number 1</string>
+    <string name="input_second_number_hint">Enter the number 2</string>
+    <string name="div_button_text" translatable="false">div</string>
+    <string name="mod_button_text" translatable="false">mod</string>
+    <string name="change_fragment">Change fragment</string>
+    <string name="input_text_hint">Enter the text</string>
+    <string name="hello_button_text">Say hello</string>
+    <string name="truncate_button_text">truncate text</string>
+    <string name="hello">Hello, %s</string>
+    <string name="results">Results</string>
+    <string name="link_hint">link</string>
+    <string name="open_link_text">open link</string>
+    <string name="open_browser_text">Open browser</string>
+    <string name="open_service_management_text">Open service management</string>
+    <string name="start_service_text">Start service</string>
+    <string name="stop_service_text">Stop service</string>
+    <string name="service_is_created">Service is created</string>
+    <string name="service_is_running">Service is running</string>
+    <string name="service_is_stopped">Service is stopped</string>
+    <string name="open_settings">Open settings</string>
+    <string name="highlight_text_in_red">Highlight text in red</string>
+    <string name="save_changes">Save changes</string>
+    <string name="clear_settings">Clear settings</string>
+    <string name="name">Name</string>
+    <string name="surname">Surname</string>
+    <string name="email" translatable="false">E-mail</string>
+    <string name="open_animation">Open animation</string>
+</resources>

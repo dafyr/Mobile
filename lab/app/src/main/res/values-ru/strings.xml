@@ -1,0 +1,27 @@
+<resources>
+    <string name="enter_data">Введите данные</string>
+    <string name="input_first_number_hint">Введите число 1</string>
+    <string name="input_second_number_hint">Введите число 2</string>
+    <string name="change_fragment">Сменить фрагмент</string>
+    <string name="input_text_hint">Введите текст</string>
+    <string name="hello_button_text">Сказать привет</string>
+    <string name="truncate_button_text">Обрезать текст</string>
+    <string name="hello">Привет, %s</string>
+    <string name="results">Результаты</string>
+    <string name="link_hint">Ссылка</string>
+    <string name="open_link_text">Открыть ссылку</string>
+    <string name="open_browser_text">Открыть браузер</string>
+    <string name="open_service_management_text">Открыть управление службой</string>
+    <string name="start_service_text">Запустить службу</string>
+    <string name="stop_service_text">Остановить службу</string>
+    <string name="service_is_created">Служба создана</string>
+    <string name="service_is_running">Служба запущена</string>
+    <string name="service_is_stopped">Служба остановлена</string>
+    <string name="open_settings">Открыть настройки</string>
+    <string name="highlight_text_in_red">Подсвечивать текст красным</string>
+    <string name="save_changes">Сохранить изменения</string>
+    <string name="clear_settings">Очистить настройки</string>
+    <string name="name">Имя</string>
+    <string name="surname">Фамилия</string>
+    <string name="open_animation">Открыть анимацию</string>
+</resources>
