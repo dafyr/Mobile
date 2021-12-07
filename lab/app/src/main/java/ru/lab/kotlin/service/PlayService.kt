@@ -25,7 +25,7 @@ class PlayService : Service() {
             this, getString(R.string.service_is_created),
             Toast.LENGTH_SHORT
         ).show()
-        mediaPlayer = MediaPlayer.create(this, R.raw.rammstein_auslander)
+        mediaPlayer = MediaPlayer.create(this, R.raw.shorty)
         mediaPlayer!!.isLooping = false
     }
 
