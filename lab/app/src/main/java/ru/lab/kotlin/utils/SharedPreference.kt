@@ -2,7 +2,7 @@ package ru.lab.kotlin.utils
 
 import android.content.Context
 import android.content.SharedPreferences
-
+//поставщик данных для вью модели
 class SharedPreference(val context: Context) {
     private val PREFS_NAME = "settings"
     private val sharedPref: SharedPreferences = context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)

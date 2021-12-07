@@ -16,7 +16,7 @@ class NumberViewModel(
     fun saveResult(result: Result) = viewModelScope.launch {
         repository.saveResultToDB(result)
     }
-
+//счет
     fun calculateResultDiv(x: Double, y: Double) = viewModelScope.launch {
         _result.value = x.div(y)
     }
@@ -24,7 +24,7 @@ class NumberViewModel(
     fun calculateResultMod(x: Double, y: Double) = viewModelScope.launch {
         _result.value = x.mod(y)
     }
-
+//
     class Factory(private val repo: ResultRepository) : ViewModelProvider.Factory {
         override fun <T : ViewModel?> create(modelClass: Class<T>): T {
             if (modelClass.isAssignableFrom(NumberViewModel::class.java)) {

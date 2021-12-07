@@ -7,7 +7,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.launch
 import ru.lab.lab5.R
-
+//анализирует данные и записывает в модель
 class StringViewModel : ViewModel() {
 
     private val _result = MutableLiveData<String>()

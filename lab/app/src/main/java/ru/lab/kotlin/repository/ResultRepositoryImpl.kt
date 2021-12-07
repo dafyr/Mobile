@@ -4,7 +4,7 @@ import kotlinx.coroutines.flow.Flow
 import ru.lab.kotlin.database.Result
 import ru.lab.kotlin.database.ResultDao
 import ru.lab.kotlin.repository.ResultRepository
-
+//говорит о том что инмлеменирует (реализует) интерфейс который результ репозиторий
 class ResultRepositoryImpl(
     private val resultDao: ResultDao
 ) : ResultRepository {
