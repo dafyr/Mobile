@@ -22,7 +22,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/link_hint"
-            android:text="https://vk.com/id104930208" />
+            android:text="https://google.com" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.button.MaterialButton

@@ -10,7 +10,7 @@
     <string name="hello_button_text">Say hello</string>
     <string name="truncate_button_text">truncate text</string>
     <string name="hello">Hello, %s</string>
-    <string name="results">Results</string>
+    <string name="results">Result history</string>
     <string name="link_hint">link</string>
     <string name="open_link_text">open link</string>
     <string name="open_browser_text">Open browser</string>

@@ -7,7 +7,7 @@
     <string name="hello_button_text">Сказать привет</string>
     <string name="truncate_button_text">Обрезать текст</string>
     <string name="hello">Привет, %s</string>
-    <string name="results">Результаты</string>
+    <string name="results">История результатов</string>
     <string name="link_hint">Ссылка</string>
     <string name="open_link_text">Открыть ссылку</string>
     <string name="open_browser_text">Открыть браузер</string>

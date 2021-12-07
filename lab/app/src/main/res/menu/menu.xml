@@ -1,25 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+<menu
     xmlns:android="http://schemas.android.com/apk/res/android">
+
     <item android:id="@+id/results"
-        android:icon="@drawable/ic_baseline_format_list_numbered_24"
-        android:title="@string/results"
-        app:showAsAction="ifRoom" />
+        android:title="@string/results"/>
+
     <item android:id="@+id/open_browser"
-        android:icon="@drawable/ic_baseline_open_in_browser_24"
-        android:title="@string/open_browser_text"
-        app:showAsAction="ifRoom" />
+        android:title="@string/open_browser_text" />
 
     <item android:id="@+id/open_service"
-        android:icon="@drawable/ic_baseline_music_note_24"
-        android:title="@string/open_service_management_text"
-        app:showAsAction="ifRoom" />
+        android:title="@string/open_service_management_text"/>
+
     <item android:id="@+id/open_settings"
-        android:icon="@drawable/ic_baseline_settings_24"
-        android:title="@string/open_settings"
-        app:showAsAction="ifRoom" />
+        android:title="@string/open_settings"/>
 
     <item android:id="@+id/open_animation"
-        android:title="@string/open_animation"
-        app:showAsAction="ifRoom" />
+        android:title="@string/open_animation"/>
 </menu>
