@@ -7,7 +7,7 @@ import android.os.Bundle
 import android.widget.Button
 import ru.lab.lab5.R
 import ru.lab.kotlin.service.PlayService
-import java.io.FileOutputStream
+import java.io.File
 
 class ServiceActivity : AppCompatActivity() {
 
@@ -30,6 +30,16 @@ class ServiceActivity : AppCompatActivity() {
         stopServiceButton.setOnClickListener {
             stopService(Intent(this, PlayService::class.java))
 
+            val fileName = "/data/data/ru.lab.kotlin/cache/myfile.txt"
+            val myfile = File(fileName)
+
+            myfile.printWriter().use { out ->
+
+                out.println("Service started")
+                out.println("Service stopped")
+            }
+
+            println("Written to file")
         }
     }
 

@@ -19,13 +19,11 @@ import ru.lab.kotlin.viewmodels.NumberViewModel
 class NumberFragment : Fragment() {
     private lateinit var editTextX: EditText
     private lateinit var editTextY: EditText
-    private lateinit var buttonDiv: Button
-    private lateinit var buttonMod: Button
+    private lateinit var buttonMultiply: Button
+    private lateinit var buttonDivide: Button
     private lateinit var textView: TextView
     private var x = 0.0
     private var y = 0.0
-    private var buttonDivCounter = 0
-    private var buttonModCounter = 0
 
     private val numberViewModel by viewModels<NumberViewModel> {
         NumberViewModel.Factory(
@@ -59,11 +57,11 @@ class NumberFragment : Fragment() {
     private fun initViews() {
         editTextX = requireView().findViewById(R.id.x_edit)
         editTextY = requireView().findViewById(R.id.y_edit)
-        buttonDiv = requireView().findViewById(R.id.btn_hello)
-        buttonMod = requireView().findViewById(R.id.btn_truncate)
+        buttonMultiply = requireView().findViewById(R.id.btn_hello)
+        buttonDivide = requireView().findViewById(R.id.btn_truncate)
         textView = requireView().findViewById(R.id.textView)
-        buttonDiv.isEnabled = false
-        buttonMod.isEnabled = false
+        buttonMultiply.isEnabled = false
+        buttonDivide.isEnabled = false
     }
 
     private fun initListeners() {
@@ -77,30 +75,18 @@ class NumberFragment : Fragment() {
             enableButtons(!text.isNullOrEmpty() && !editTextX.text.isNullOrEmpty())
         }
 
-        buttonDiv.setOnClickListener {
-            buttonModCounter = 0
-            buttonMod.isEnabled = true
-            buttonDivCounter++
-            if (buttonDivCounter >= 3) {
-                buttonDiv.isEnabled = false
-            }
+        buttonMultiply.setOnClickListener {
             numberViewModel.calculateResultMultiply(x, y)
         }
 
-        buttonMod.setOnClickListener {
-            buttonDivCounter = 0
-            buttonDiv.isEnabled = true
-            buttonModCounter++
-            if (buttonModCounter >= 3) {
-                buttonMod.isEnabled = false
-            }
+        buttonDivide.setOnClickListener {
             numberViewModel.calculateResultDivide(x, y)
         }
     }
 
     private fun enableButtons(bool: Boolean) {
-        buttonDiv.isEnabled = bool
-        buttonMod.isEnabled = bool
+        buttonMultiply.isEnabled = bool
+        buttonDivide.isEnabled = bool
     }
 
 
