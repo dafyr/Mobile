@@ -1,11 +1,13 @@
 package ru.lab.kotlin.ui.service
 
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import ru.lab.lab5.R
 import ru.lab.kotlin.service.PlayService
+import java.io.FileOutputStream
 
 class ServiceActivity : AppCompatActivity() {
 
@@ -27,6 +29,12 @@ class ServiceActivity : AppCompatActivity() {
 
         stopServiceButton.setOnClickListener {
             stopService(Intent(this, PlayService::class.java))
+
+            val fileOutputStream: FileOutputStream
+            var fileName = "data.txt"
+
+            fileOutputStream = openFileOutput(fileName, Context.MODE_PRIVATE)
+            fileOutputStream.write("Hello World".toByteArray())
         }
     }
 

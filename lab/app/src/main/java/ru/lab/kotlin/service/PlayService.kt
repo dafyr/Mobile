@@ -5,11 +5,17 @@ import android.widget.Toast
 import android.content.Intent
 
 import android.app.Service
+import android.content.Context
 
 import android.media.MediaPlayer
+import android.os.Environment
 
 import android.os.IBinder
 import ru.lab.lab5.R
+import java.io.File
+import java.io.FileOutputStream
+import java.io.FileWriter
+import java.io.IOException
 
 
 class PlayService : Service() {
@@ -25,7 +31,7 @@ class PlayService : Service() {
             this, getString(R.string.service_is_created),
             Toast.LENGTH_SHORT
         ).show()
-        mediaPlayer = MediaPlayer.create(this, R.raw.shorty)
+        mediaPlayer = MediaPlayer.create(this, R.raw.rampampam)
         mediaPlayer!!.isLooping = false
     }
 
@@ -45,5 +51,16 @@ class PlayService : Service() {
             Toast.LENGTH_SHORT
         ).show()
         mediaPlayer!!.stop()
+        writeToFile()
     }
+
+    private fun writeToFile() {
+        val fileOutputStream: FileOutputStream
+        var fileName = "data.txt"
+
+        fileOutputStream = openFileOutput(fileName, Context.MODE_PRIVATE)
+        fileOutputStream.write("Hello World".toByteArray())
+
+    }
+
 }

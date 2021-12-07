@@ -23,6 +23,7 @@ class SettingsActivity : AppCompatActivity() {
 
     private val sharedPrefs by lazy { SharedPreference(this) }
 
+    @RequiresApi(Build.VERSION_CODES.P)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_settings)
@@ -42,6 +43,7 @@ class SettingsActivity : AppCompatActivity() {
 
     }
 
+    @RequiresApi(Build.VERSION_CODES.P)
     private fun initListeners() {
         useDifferentColor.setOnCheckedChangeListener { _, isChecked ->
             setFiledTextColor(isChecked)

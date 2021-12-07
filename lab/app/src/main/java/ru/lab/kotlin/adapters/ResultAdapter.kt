@@ -38,6 +38,3 @@ class ResultAdapter(private val results: List<Result>, private val clickListener
 
 }
 
-interface OnItemClickListener {
-    fun onClick(position: Int)
-}
