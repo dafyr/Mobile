@@ -3,8 +3,8 @@
     <string name="enter_data">Enter data</string>
     <string name="input_first_number_hint">Enter the number 1</string>
     <string name="input_second_number_hint">Enter the number 2</string>
-    <string name="div_button_text" translatable="false">div</string>
-    <string name="mod_button_text" translatable="false">mod</string>
+    <string name="multiply_button_text">multiply</string>
+    <string name="divide_button_text" >divide</string>
     <string name="change_fragment">Change fragment</string>
     <string name="input_text_hint">Enter the text</string>
     <string name="hello_button_text">Say hello</string>

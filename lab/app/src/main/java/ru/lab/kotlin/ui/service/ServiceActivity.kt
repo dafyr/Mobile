@@ -30,11 +30,6 @@ class ServiceActivity : AppCompatActivity() {
         stopServiceButton.setOnClickListener {
             stopService(Intent(this, PlayService::class.java))
 
-            val fileOutputStream: FileOutputStream
-            var fileName = "data.txt"
-
-            fileOutputStream = openFileOutput(fileName, Context.MODE_PRIVATE)
-            fileOutputStream.write("Hello World".toByteArray())
         }
     }
 

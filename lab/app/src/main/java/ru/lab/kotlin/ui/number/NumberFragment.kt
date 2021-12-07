@@ -84,7 +84,7 @@ class NumberFragment : Fragment() {
             if (buttonDivCounter >= 3) {
                 buttonDiv.isEnabled = false
             }
-            numberViewModel.calculateResultDiv(x, y)
+            numberViewModel.calculateResultMultiply(x, y)
         }
 
         buttonMod.setOnClickListener {
@@ -94,7 +94,7 @@ class NumberFragment : Fragment() {
             if (buttonModCounter >= 3) {
                 buttonMod.isEnabled = false
             }
-            numberViewModel.calculateResultMod(x, y)
+            numberViewModel.calculateResultDivide(x, y)
         }
     }
 

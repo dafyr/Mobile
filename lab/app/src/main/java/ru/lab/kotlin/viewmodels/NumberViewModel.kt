@@ -17,12 +17,12 @@ class NumberViewModel(
         repository.saveResultToDB(result)
     }
 //счет
-    fun calculateResultDiv(x: Double, y: Double) = viewModelScope.launch {
-        _result.value = x.div(y)
+    fun calculateResultMultiply(x: Double, y: Double) = viewModelScope.launch {
+        _result.value = x * y
     }
 
-    fun calculateResultMod(x: Double, y: Double) = viewModelScope.launch {
-        _result.value = x.mod(y)
+    fun calculateResultDivide(x: Double, y: Double) = viewModelScope.launch {
+        _result.value = x / y
     }
 //
     class Factory(private val repo: ResultRepository) : ViewModelProvider.Factory {
