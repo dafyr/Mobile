@@ -51,16 +51,6 @@ class PlayService : Service() {
             Toast.LENGTH_SHORT
         ).show()
         mediaPlayer!!.stop()
-        writeToFile()
-    }
-
-    private fun writeToFile() {
-        val fileOutputStream: FileOutputStream
-        var fileName = "data.txt"
-
-        fileOutputStream = openFileOutput(fileName, Context.MODE_PRIVATE)
-        fileOutputStream.write("Hello World".toByteArray())
-
     }
 
 }

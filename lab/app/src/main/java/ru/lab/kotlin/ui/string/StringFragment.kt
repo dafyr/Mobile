@@ -18,7 +18,6 @@ class StringFragment : Fragment() {
 
     private lateinit var editTextString: EditText
     private lateinit var buttonHello: Button
-    private lateinit var buttonTruncate: Button
     private lateinit var textView: TextView
     private var text = ""
 
@@ -49,10 +48,8 @@ class StringFragment : Fragment() {
     private fun initViews() {
         editTextString = requireView().findViewById(R.id.string_edit)
         buttonHello = requireView().findViewById(R.id.btn_hello)
-        buttonTruncate = requireView().findViewById(R.id.btn_truncate)
         textView = requireView().findViewById(R.id.textView)
         buttonHello.isEnabled = false
-        buttonTruncate.isEnabled = false
     }
 
     private fun initListeners() {
@@ -65,17 +62,14 @@ class StringFragment : Fragment() {
             stringViewModel.doHello(resources, text)
         }
 
-        buttonTruncate.setOnClickListener {
-            stringViewModel.doTruncate(text)
-        }
     }
 
     private fun enableButtons(bool: Boolean) {
         buttonHello.isEnabled = bool
-        buttonTruncate.isEnabled = bool
     }
 
     companion object {
         fun newInstance() = StringFragment()
     }
+
 }

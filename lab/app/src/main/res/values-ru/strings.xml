@@ -5,7 +5,6 @@
     <string name="change_fragment">Сменить фрагмент</string>
     <string name="input_text_hint">Введите текст</string>
     <string name="hello_button_text">Сказать привет</string>
-    <string name="truncate_button_text">Обрезать текст</string>
     <string name="hello">Привет, %s</string>
     <string name="results">История результатов</string>
     <string name="link_hint">Ссылка</string>
