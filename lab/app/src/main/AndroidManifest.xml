@@ -11,20 +11,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Lab1">
         <activity
-            android:name="ru.lab.kotlin.ui.animation.AnimationActivity"
+            android:name="ru.lab.kotlin.view.animation.AnimationActivity"
             android:exported="false" />
         <activity
-            android:name="ru.lab.kotlin.ui.settings.SettingsActivity"
+            android:name="ru.lab.kotlin.view.settings.SettingsActivity"
             android:exported="false" />
         <activity
-            android:name="ru.lab.kotlin.ui.service.ServiceActivity"
+            android:name="ru.lab.kotlin.view.service.ServiceActivity"
             android:exported="true" />
         <activity
-            android:name="ru.lab.kotlin.ui.main.OpenBrowserActivity"
+            android:name="ru.lab.kotlin.view.main.OpenBrowserActivity"
             android:exported="true" />
         <activity
-            android:name="ru.lab.kotlin.ui.main.IntentCatcher"
-            android:parentActivityName="ru.lab.kotlin.ui.main.MainActivity">
+            android:name="ru.lab.kotlin.view.main.IntentCatcher"
+            android:parentActivityName="ru.lab.kotlin.view.main.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.SEND" />
 
@@ -34,7 +34,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="ru.lab.kotlin.ui.main.MainActivity"
+            android:name="ru.lab.kotlin.view.main.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -43,8 +43,8 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="ru.lab.kotlin.ui.result.ResultActivity"
-            android:parentActivityName="ru.lab.kotlin.ui.main.MainActivity" />
+            android:name="ru.lab.kotlin.view.result.ResultActivity"
+            android:parentActivityName="ru.lab.kotlin.view.main.MainActivity" />
 
         <service
             android:name="ru.lab.kotlin.service.PlayService"

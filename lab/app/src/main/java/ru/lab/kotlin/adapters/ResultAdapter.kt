@@ -35,6 +35,6 @@ class ResultAdapter(private val results: List<Result>, private val clickListener
             resultTextView = view.findViewById(R.id.tv_result)
         }
     }
-
+//каждая строчка была жирным шрифтом, после клика она перестает быть жирной
 }
 

@@ -4,7 +4,7 @@ import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.Query
 import kotlinx.coroutines.flow.Flow
-
+//описываем директивы для работы с таблицами
 @Dao
 interface ResultDao {
     @Insert

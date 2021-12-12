@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="ru.lab.kotlin.ui.main.OpenBrowserActivity">
+    tools:context="ru.lab.kotlin.view.main.OpenBrowserActivity">
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/et_link"

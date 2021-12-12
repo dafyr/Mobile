@@ -4,11 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="ru.lab.kotlin.ui.main.MainActivity">
+    tools:context="ru.lab.kotlin.view.main.MainActivity">
 
     <fragment
         android:id="@+id/number_fragment"
-        android:name="ru.lab.kotlin.ui.number.NumberFragment"
+        android:name="ru.lab.kotlin.view.number.NumberFragment"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -18,7 +18,7 @@
 
     <fragment
         android:id="@+id/string_fragment"
-        android:name="ru.lab.kotlin.ui.string.StringFragment"
+        android:name="ru.lab.kotlin.view.string.StringFragment"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         app:layout_constraintTop_toTopOf="parent"
